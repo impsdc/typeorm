@@ -1,0 +1,25 @@
+{
+  "name": "lg-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "typeorm": "npx typeorm migration:generate -d ./src/database.ts ./src/migrations/test",
+    "typeorm:build": "tsc && npx typeorm migration:generate -d ./build/database.js ./src/migrations/test"
+  },
+  "author": "Paul Santamaria",
+  "license": "ISC",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.9.2",
+    "type-graphql": "^2.0.0-rc.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "nodemon": "^2.0.16",
+    "tslib": "^2.6.3",
+    "typeorm-ts-node-commonjs": "^0.3.20",
+    "typeorm-ts-node-esm": "^0.3.20"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+      "module": "preserve",
+      "noEmit": false,
+      "strict": true,
+      "noUncheckedIndexedAccess": true,
+      "noImplicitOverride": true,
+      "skipLibCheck": true,
+      "target": "es2022",
+      "allowJs": true,
+      "resolveJsonModule": true,
+      "moduleDetection": "force",
+      "isolatedModules": true,
+      "verbatimModuleSyntax": true,
+      "noImplicitAny": false,
+      "sourceMap": true,
+      "outDir": "build",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "declaration": true,
+      "importHelpers": true,
+      "forceConsistentCasingInFileNames": true,
+      "esModuleInterop": true,
+      "lib": ["es2022"],
+      "strictPropertyInitialization": false,
+      "moduleResolution": "node"
+  },
+  "exclude": ["node_modules", "**/*.spec.ts", "build/**/*", "./src/datas/**/*.ts"],
+  "paths": {
+    "@/*": ["./src/*"],
+    "@models/*": ["./src/models/*"],
+    "@components/*": ["./src/resolvers/*"],
+    "@env": ["env.ts"]
+  }
+}
